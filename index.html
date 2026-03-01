@@ -47,7 +47,7 @@
                 <p class="hero-tagline">Architecting scalable, secure solutions using AWS and Kubernetes</p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn--primary">View Projects</a>
-                    <a href="https://github.com/Anish1614/Portfolio/blob/main/resume_latest.pdf" class="btn btn--outline" target="_blank" rel="noopener noreferrer">View Resume</a>
+                    <a href="resume_with_gitops.pdf" class="btn btn--outline" target="_blank" rel="noopener noreferrer">View Resume</a>
                 </div>
                 <div class="hero-social">
                     <a href="https://github.com/Anish1614" target="_blank" rel="noopener noreferrer" class="social-link">
@@ -70,7 +70,7 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p class="about-summary">Cloud and DevOps Engineer with 2+ years of experience architecting scalable, secure solutions using AWS and Kubernetes. Proficient in Jenkins, CI/CD pipelines, and infrastructure automation with Terraform—driving significant reductions in deployment times and incident resolution.</p>
+                    <p class="about-summary">Cloud & DevOps Engineer with 2.5+ years of hands-on production experience operating containerized microservices on AWS and Kubernetes (EKS). Strong expertise in CI/CD automation, GitOps-driven deployments, infrastructure cost optimization, monitoring, incident response, and rollback-safe release engineering.</p>
                     <div class="about-details">
                         <div class="detail-item">
                             <i class="fas fa-map-marker-alt"></i>
@@ -132,7 +132,13 @@
                         <span class="skill-tag">Python</span>
                         <span class="skill-tag">Bash</span>
                         <span class="skill-tag">Git</span>
-                        <span class="skill-tag">Helm</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-code-branch"></i> GitOps & CD</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">ArgoCD</span>
+                        <span class="skill-tag">GitOps</span>
                     </div>
                 </div>
                 <div class="skill-category">
@@ -155,7 +161,8 @@
                     <div class="skill-items">
                         <span class="skill-tag">Docker</span>
                         <span class="skill-tag">Kubernetes</span>
-                        <span class="skill-tag">Minikube</span>
+                        <span class="skill-tag">Helm</span>
+                        <span class="skill-tag">HPA</span>
                     </div>
                 </div>
                 <div class="skill-category">
@@ -184,34 +191,19 @@
             
             <div class="experience-item">
                 <div class="experience-header">
-                    <h3>Associate Product Engineer</h3>
-                    <span class="experience-duration">August 2024 – Present</span>
+                    <h3>Associate Product Engineer (DevOps)</h3>
+                    <span class="experience-duration">August 2023 – Present</span>
                 </div>
                 <div class="experience-company">
                     <i class="fas fa-building"></i>
                     <span>Inovaare Cloud Solutions, Bhubaneswar, India</span>
                 </div>
                 <ul class="experience-achievements">
-                    <li>Architected and implemented monitoring and logging solutions using Prometheus, Grafana, and Loki, resulting in improved system visibility.</li>
-                    <li>Developed automated deployment workflows, significantly reducing deployment time.</li>
-                    <li>Established robust CI/CD pipelines, increasing deployment frequency by 60%.</li>
-                </ul>
-            </div>
-
-            <div class="experience-item">
-                <div class="experience-header">
-                    <h3>Trainee Product Engineer</h3>
-                    <span class="experience-duration">August 2023 – August 2024</span>
-                </div>
-                <div class="experience-company">
-                    <i class="fas fa-building"></i>
-                    <span>Inovaare Cloud Solutions, Bhubaneswar, India</span>
-                </div>
-                <ul class="experience-achievements">
-                    <li>Designed and implemented scalable AWS cloud infrastructure solutions, ensuring 99.9% uptime.</li>
-                    <li>Created and maintained CI/CD pipelines using Git and Jenkins, reducing deployment errors by 50%.</li>
-                    <li>Developed RESTful APIs for EFS creation, Bitbucket image creation, and application metadata management.</li>
-                    <li>Optimized AWS services utilization, resulting in a 25% reduction in operational costs.</li>
+                    <li>Designed and implemented an on-demand application auto start/stop system on AWS EKS, reducing idle infrastructure costs by approximately 30–40%.</li>
+                    <li>Managed production-grade EKS clusters hosting multiple microservices using rolling deployments, HPA, and zero-downtime release strategies.</li>
+                    <li>Introduced structured GitOps-based deployment workflows, improving deployment traceability and environment consistency.</li>
+                    <li>Owned production incident response, including configuring Prometheus/Grafana alerts and investigating OOMKilled pods and memory leaks.</li>
+                    <li>Implemented rollback and revert mechanisms in Jenkins pipelines, enabling safe recovery from failed deployments.</li>
                 </ul>
             </div>
         </div>
@@ -223,6 +215,30 @@
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>EKS GitOps Platform (End-to-End Production Simulation)</h3>
+                        <span class="project-date">2025</span>
+                    </div>
+                    <p class="project-description">Built a complete GitOps-driven Kubernetes platform starting from local Kubernetes to full AWS EKS migration.</p>
+                    <ul class="project-achievements">
+                        <li>Provisioned infrastructure using Terraform modules (VPC, EKS, IAM, ALB Controller).</li>
+                        <li>Implemented ArgoCD-based continuous delivery and integrated Prometheus, Grafana, and Loki for full observability.</li>
+                    </ul>
+                    <div class="project-technologies">
+                        <span class="tech-tag">AWS EKS</span>
+                        <span class="tech-tag">Terraform</span>
+                        <span class="tech-tag">ArgoCD</span>
+                        <span class="tech-tag">Prometheus</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Anish1614/eks-gitops-platform" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <i class="fab fa-github"></i>
+                            View Code
+                        </a>
+                    </div>
+                </div>
+
                 <div class="project-card">
                     <div class="project-header">
                         <h3>AWS Infrastructure Automation with Terraform and Jenkins</h3>
